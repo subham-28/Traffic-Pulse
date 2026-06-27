@@ -10,6 +10,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 import pydeck as pdk
 
+from src.load_artifacts import load_data
+
 
 # -------------------------------------------------------
 # Project imports
@@ -17,12 +19,7 @@ import pydeck as pdk
 ROOT_DIR = Path(__file__).resolve().parent
 sys.path.append(str(ROOT_DIR))
 
-import streamlit as st
-
-st.write("App started successfully")
-
-# from src.predict import predict_from_lat_lon
-# from src.load_artifacts import load_data
+from src.predict import predict_from_lat_lon
 
 
 # -------------------------------------------------------
