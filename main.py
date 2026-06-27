@@ -17,8 +17,12 @@ import pydeck as pdk
 ROOT_DIR = Path(__file__).resolve().parent
 sys.path.append(str(ROOT_DIR))
 
-from src.predict import predict_from_lat_lon
-from src.load_artifacts import load_data
+import streamlit as st
+
+st.write("App started successfully")
+
+# from src.predict import predict_from_lat_lon
+# from src.load_artifacts import load_data
 
 
 # -------------------------------------------------------
